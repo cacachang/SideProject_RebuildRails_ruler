@@ -5,6 +5,7 @@ module Rulers
   # Your code goes here...
   class Application
     def call(env)
+      `echo debug > debug.txt`
       [
         200, 
         {'Content-Type' => 'text/html'},
@@ -12,4 +13,5 @@ module Rulers
       ]
     end
   end
+
 end
